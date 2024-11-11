@@ -3,7 +3,7 @@ from loans import loan_bp
 from user import user_bp
 from userAccount import updateAccount_bp
 from userLogin import login_bp
-from userLogout import logout_bp
+from userLogout import logout_bp,blacklist
 from userRegistration import reg_bp
 from flask_sqlalchemy import SQLAlchemy
 from models import db
