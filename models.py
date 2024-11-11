@@ -11,6 +11,9 @@ class LoanModel(db.Model):
     loanName = db.Column(db.String(100),nullable=False)
     user_id = db.Column(db.String(100),nullable=False)
     userName = db.Column(db.String(100),nullable=False)
+    address = db.Column(db.String(1000),nullable=False)
+    contact = db.Column(db.String(100),nullable=False)
+    email = db.Column(db.String(100),nullable=False)
 
 class UserModel(db.Model):
     __tablename__ = 'user'

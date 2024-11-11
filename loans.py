@@ -40,7 +40,10 @@ class Loan(MethodView):
                 id=request_data['id'],
                 loanName=request_data['loanName'],
                 user_id=user_data_from_db.id,
-                userName =user_data_from_db.userName
+                userName =user_data_from_db.userName,
+                address = request_data['address'],
+                contact = request_data['contact'],
+                email = request_data['email']
                 )
                 print(new_loan)
                 # new_loan = LoanModel(**request_data)
